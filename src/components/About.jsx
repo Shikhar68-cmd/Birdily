@@ -1,4 +1,4 @@
-import "./About.css";
+import "./about.css";
 import { Bird, Code2, Cpu, Rocket } from "lucide-react";
 
 export default function About() {
