@@ -4,6 +4,7 @@ import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger)
 import treeImg from "../assets/tree.png";
+import bgImg from "../assets/hero-poster.png";
 import backVid from "../assets/birds.mp4";
 import appImg from "../assets/app.png";
 import { useNavigate } from "react-router-dom";
@@ -231,7 +232,9 @@ const Homepage = () => {
                     <img src={appImg} className='img-after' alt="" />
 
                     <div className='maincnt'>
-                        <video className='cardvideo' autoPlay muted loop playsInline>
+                        <video className='cardvideo'
+                        poster="/hero-poster.png"
+                        autoPlay muted loop playsInline>
                             <source src={backVid} type="video/mp4" />
                         </video>
 
