@@ -18,7 +18,7 @@ export default function About() {
                     </h1>
 
                     <p>
-                        I'm an 18-year-old developer from India with a passion for building
+                        I'm an 20-year-old developer from India with a passion for building
                         interactive web applications and exploring the world of Artificial
                         Intelligence.
                     </p>
