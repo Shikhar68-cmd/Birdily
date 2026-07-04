@@ -1,0 +1,805 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.homepagecnt {
+    background-color: #fce4fb;
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.page1 {
+    height: 200vh;
+    width: 100%;
+    display: flex;
+    padding: 0;
+    align-items: start;
+    justify-content: center;
+    overflow-x: hidden;
+
+
+
+}
+
+.card {
+    transform-origin: center center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(68, 68, 68);
+    font-size: 2.5rem;
+    padding: 20px;
+    object-fit: cover;
+    overflow: hidden;
+    box-shadow: 
+    0 0 15px #9b00ff,
+    0 0 40px #6a00ff;
+}
+
+.card video{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.img-after{
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+
+
+
+.logo {
+    height: 600px;
+    width: 750px;
+    background-color: transparent;
+    border-radius: 20px;
+    z-index: 0;
+    position: absolute;
+    left: 80px;
+    top: 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 50px;
+
+}
+
+.logo h2 {
+    font-family: "Great Vibes", cursive;
+    font-size: 13rem;
+    display: inline;
+    color: rgb(255, 128, 255);
+    user-select: none;
+    opacity: 1;
+    text-shadow:
+        1px 1px 0 #d65ad6,
+        2px 2px 0 #c04ac0,
+        3px 3px 0 #aa3aaa,
+        4px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.logo svg{
+    position: absolute;
+    left: 240px;
+    top: 245px;
+}
+
+.text-container h1 {
+    display: block;
+    line-height: 2;
+    margin: 0;
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 24px;
+    color: rgb(135, 60, 189);
+    font-weight: 600;
+    text-shadow: 0 0 5px rgba(255, 196, 249, 0.6);
+    
+
+}
+
+.text-container{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+
+.letter {
+    opacity: 0;
+}
+
+.mover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: rgb(255, 72, 234);
+    z-index: 2;
+
+}
+
+
+.tree-cnt{
+    height: 100vh;
+    width: 400px;
+    background-color: transparent;
+    border-radius: 20px;
+    z-index: 0;
+    position: absolute;
+    right: 85px;
+    top: 0vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 50px;
+}
+
+.tree-cnt img{
+    height: 100%;
+    mix-blend-mode: multiply;
+    width: auto;
+    object-fit: contain;
+    scale: 1.15;
+    
+}
+
+.title{
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    color: white;
+    mix-blend-mode: difference;
+    background: rgba(0,0,0,0.15);
+    font-size: clamp(8rem, 14vw, 18rem);
+    letter-spacing: -0.04em;
+
+}
+
+.small-title{
+    font-size: 22px;
+    color: white;
+    position: absolute;
+    left: 35vw;
+    z-index: 3;
+    text-shadow:
+    0 2px 10px rgba(0,0,0,0.8),
+    0 0 20px rgba(0,0,0,0.4);
+}
+
+.maincnt{
+    padding: 0;
+    display: block;
+}
+
+.explore{
+    position: absolute;
+    height: 60px;
+    width: 300px;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    bottom: 117vh;
+    left: 67%;
+    font-size: 25px;
+    font-family: 'Space Grotesk';
+    transition: all 1s ease;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(
+        135deg,
+        #d8b4fe,
+        #f9a8d4,
+        #fdba74,
+        #fbcfe8,
+        #c4b5fd,
+        #93c5fd,
+        #f9a8d4
+    );
+
+    background-size: 500% 500%;
+
+    animation: dreamyGradient 12s ease infinite;
+
+}
+
+.explore:hover{
+    scale: 110%;
+    background-color: #caa4ff;
+    color: #2b0068;
+}
+.explore:active{
+    scale: 100%;
+}
+
+@keyframes dreamyGradient {
+    0% {
+        background-position: 0% 50%;
+        transform: scale(1);
+    }
+
+    15% {
+        background-position: 25% 40%;
+    }
+
+    30% {
+        background-position: 50% 60%;
+    }
+
+    45% {
+        background-position: 75% 30%;
+    }
+
+    60% {
+        background-position: 100% 50%;
+    }
+
+    75% {
+        background-position: 75% 70%;
+    }
+
+    90% {
+        background-position: 25% 60%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+        transform: scale(1);
+    }
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    background:
+        linear-gradient(
+        135deg,
+        #080510 0%,
+        #120C24 40%,
+        #1B1035 100%
+        );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navcnt{
+    width: 100%;
+    position: absolute;
+    height: 70px;
+    background-color: rgba(20, 16, 38, 0.8);
+    backdrop-filter: blur(15px);
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-top: 8px;
+    overflow: visible;
+    z-index: 5000;
+    
+    
+}
+
+.nav-logo{
+    color: white;
+    font-family: "Great Vibes", cursive;
+    font-size: 2.5rem;
+    color: #FF8AD8;
+    text-decoration: none;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.nav-logo::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: #FF8AD8;
+    box-shadow: 0 0 12px #FF8AD8;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+.nav-logo:hover::after {
+    width: 100%;
+
+}
+
+.nav-logo:hover{
+    text-shadow:
+    0 0 4px rgba(255, 138, 216, 0.8),
+    0 0 8px rgba(255, 138, 216, 0.5);
+}
+
+/* Search Container */
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    user-select: none;
+}
+
+
+.search-box input {
+    font-family: "DM Mono";
+    width: 420px;
+    padding: 12px 18px;
+    
+    border: 2px solid rgba(255,138,216,.2);
+    border-radius: 50px;
+
+    outline: none;
+
+    background: rgba(255,255,255,.05);
+    color: white;
+    font-size: 1rem;
+
+    transition: .3s;
+}
+
+.search-box input::placeholder {
+    color: rgba(255,255,255,.5);
+}
+
+.search-box input:focus {
+    border-radius: 10px;
+    border-color: #FF8AD8;
+    box-shadow:
+        0 0 10px rgba(255,138,216,.4);
+}
+
+/* Button */
+
+.search-box button {
+    padding: 12px 22px;
+    font-family: "DM Mono";
+
+    border: solid 0px;
+    border-radius: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #ff8ad8,
+        #b76eff
+        
+    );
+
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.search-box button:hover {
+    border-radius: 5px;
+
+    box-shadow:
+        0 0 10px rgba(255,138,216,.5),
+        0 0 20px rgba(183,110,255,.3);
+}
+
+.search-box button:active {
+    transform: scale(.97);
+}
+
+.map-cnt{
+    height: 85vh;
+    width: 98%;
+    background-color: #d0afff44;
+    border-radius: 20px;
+    position: absolute;
+    top: 90px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.leaflet-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow:
+    0 0 20px rgba(183,110,255,.25),
+    0 0 60px rgba(255,138,216,.12);
+}
+
+.leaflet-tile{
+    
+}
+
+/* ── Bird Info Panel ─*/
+.bird-info{
+    position: absolute;
+
+    top: 110px;
+    right: 40px;
+
+    width: 480px;
+    max-height: 600px;
+
+    z-index: 1000;
+
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    background: rgba(20, 17, 31, 0.95);
+    border: 1px solid rgba(192, 132, 252, 0.12);
+
+    box-shadow:
+        0 18px 45px rgba(0,0,0,.45),
+        0 0 30px rgba(168,85,247,.15);
+
+    border-radius: 20px;
+    opacity: 1;
+    color: #e8eaf0;
+}
+
+.bird-info--state {
+    opacity: 0.8;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+    color: #A78BFA;
+}
+
+.state-icon {
+    font-size: 2.4rem;
+    margin-bottom: 4px;
+    color:#E879F9;
+}
+
+.section-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #4ade80;
+    
+    margin: 0 0 4px;
+}
+
+/*  Hero Card */
+.hero-card {
+    border-radius: 14px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.hero-img-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background:#231B35;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    object-position: top;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(15,10,25,.96) 0%,
+        rgba(15,10,25,.35) 55%,
+        transparent 100%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 18px;
+    gap: 4px;
+}
+
+.hero-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color:#F0ABFC;
+}
+
+.hero-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+    color:#FAF5FF;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.hero-sci {
+    font-size: 0.75rem;
+    font-style: italic;
+    color:#C4B5FD;
+    margin: 0;
+}
+
+.hero-meta {
+    display: flex;
+    gap: 14px;
+    margin-top: 6px;
+    font-size: 0.72rem;
+    color:#D1C4E9;
+}
+
+/*  Mini Cards */
+.mini-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.mini-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background:#1E1930;
+    border:1px solid rgba(192,132,252,.08);
+    border-radius: 10px;
+    padding: 8px;
+    transition: border-color 0.18s;
+    cursor: default;
+}
+
+.mini-card:hover {
+    background:#29203D;
+    border-color:#C084FC;
+
+    transform:translateY(-2px);
+
+    transition:.25s;
+}
+
+.mini-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 7px;
+    flex-shrink: 0;
+    background:linear-gradient(
+        135deg,
+        #8B5CF6,
+        #EC4899
+    );
+}
+
+.mini-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.mini-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color:#F8F5FF;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.mini-sci {
+    font-size: 0.7rem;
+    font-style: italic;
+    color:#C4B5FD;
+    margin: 0;
+}
+
+.mini-meta {
+    display: flex;
+    gap: 10px;
+    font-size: 0.68rem;
+    color:#A78BFA;
+    margin-top: 2px;
+}
+
+.bird-info::-webkit-scrollbar {
+    display: none;
+}
+
+/* Firefox */
+.bird-info {
+    scrollbar-width: none;
+}
+
+.bird-info {
+    -ms-overflow-style: none;
+}
+
+.search-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-results{
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+
+    width: 100%;
+
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    overflow: hidden;
+    z-index: 1000;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.search-item{
+    padding: 12px 16px;
+    cursor: pointer;
+    color: black;
+}
+
+.search-item:hover{
+    background: #f3f3f3;
+}
+
+/* Popup */
+.leaflet-popup.bird-popup .leaflet-popup-content-wrapper {
+    padding: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    background: transparent;
+    box-shadow: 0 12px 32px rgba(76, 29, 149, 0.35);
+  }
+  
+  .leaflet-popup.bird-popup .leaflet-popup-content {
+    margin: 0;
+    width: 420px !important;
+  }
+  
+  .leaflet-popup.bird-popup .leaflet-popup-tip {
+    background: #1e1b2e;
+  }
+  
+  .bird-card {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(160deg, #1e1b2e 0%, #241f38 55%, #1a2e22 100%);
+    border: 1px solid rgba(163, 230, 53, 0.25);
+    border-radius: 16px;
+    overflow: hidden;
+    font-family: inherit;
+  }
+  
+  .bird-image {
+    width: 190px;
+    height: auto;
+    min-height: 160px;
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+    border-right: 2px solid rgba(163, 230, 53, 0.4);
+  }
+  
+  .bird-body {
+    padding: 14px 16px;
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .bird-species {
+    margin: 0 0 3px;
+    font-size: 11px;
+    font-style: italic;
+    letter-spacing: 0.03em;
+    color: #a3e635;
+    text-transform: uppercase;
+    opacity: 0.85;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .bird-body h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #f3e8ff;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .bird-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 8px;
+    border-top: 1px dashed rgba(196, 181, 253, 0.2);
+  }
+  
+  .bird-meta p {
+    margin: 0;
+    font-size: 12.5px;
+    color: #c4b5fd;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .bird-meta p:last-child {
+    color: #86efac;
+    font-weight: 600;
+  }
+  
+  .leaflet-popup.bird-popup .leaflet-popup-close-button {
+    color: #d8b4fe !important;
+    font-size: 18px !important;
+    top: 6px !important;
+    right: 6px !important;
+    text-shadow: 0 0 6px rgba(0,0,0,0.5);
+  }

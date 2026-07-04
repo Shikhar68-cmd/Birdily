@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+.features-cnt {
+  position: absolute;
+  top: 270vh;
+  left: 0;
+  width: 100%;
+  padding: 120px 8vw 100px;
+  text-align: center;
+}
+
+.features-heading {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #4a1d68;
+  margin-bottom: 16px;
+  letter-spacing: -0.03em;
+}
+
+.features-subheading {
+  font-family: "Inter", sans-serif;
+  font-size: 1.05rem;
+  color: #9a6bb5;
+  font-weight: 400;
+  margin-bottom: 70px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1300px;
+  margin: 150px auto;
+}
+
+.feature-card {
+  position: relative;
+  background: linear-gradient(160deg, #ffffff 0%, #fdf3fc 100%);
+  border: 1px solid rgba(168, 85, 247, 0.14);
+  border-radius: 26px;
+
+  padding: 44px 32px 38px;
+  min-height: 300px;
+
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.4s ease;
+
+  box-shadow: 0 4px 20px rgba(216, 140, 240, 0.1);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(168, 85, 247, 0.4);
+  box-shadow: 0 30px 60px -12px rgba(168, 85, 247, 0.28);
+}
+
+.feature-index {
+  position: absolute;
+  top: 28px;
+  right: 32px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #d8b4f8;
+  letter-spacing: 0.05em;
+}
+
+.feature-icon-wrap {
+  width: 62px;
+  height: 62px;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #f3e3fb, #ecd6f9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 0.4s ease;
+}
+
+.feature-card:hover .feature-icon-wrap {
+  transform: scale(1.08) rotate(-6deg);
+  background: linear-gradient(145deg, #e9c9f9, #dfb3f5);
+}
+
+.feature-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.feature-card h3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #5b257e;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+.feature-card p {
+  font-family: "Inter", sans-serif;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: #8a6b9e;
+  font-weight: 400;
+  flex-grow: 1;
+}
+
+.feature-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #ff9de8, #d946ef, #8b5cf6);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.feature-card:hover .feature-line {
+  transform: scaleX(1);
+}
