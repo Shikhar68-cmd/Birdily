@@ -233,7 +233,7 @@ const Homepage = () => {
 
                     <div className='maincnt'>
                         <video className='cardvideo'
-                        poster="/hero-poster.png"
+                        poster={bgImg}
                         autoPlay muted loop playsInline>
                             <source src={backVid} type="video/mp4" />
                         </video>
